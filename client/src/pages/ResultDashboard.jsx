@@ -134,7 +134,7 @@ const ResultDashboard = () => {
     setDownloading(true);
     try {
       // Backend Report PDF Download with complete transcript history
-      const res = await axios.post('http://localhost:8000/api/interview/report/1/pdf', {
+      const res = await axios.post('https://ai-interview-confidence-analyzer.onrender.com/api/interview/report/1/pdf', {
         candidateName: candidate?.name,
         metrics: report?.metrics,
         selectionStatus: report?.selectionStatus,
@@ -204,7 +204,7 @@ const ResultDashboard = () => {
       : "vinodkumar.chakali97@gmail.com";
 
     try {
-      await axios.post('http://localhost:8000/api/interview/send-email', {
+      await axios.post('https://ai-interview-confidence-analyzer.onrender.com/api/interview/send-email', {
         candidate_email: targetEmail,
         recipient_email: targetEmail,
         candidate_name: candidate?.name || "Candidate",

@@ -28,7 +28,7 @@ const Dashboard = () => {
     formData.append('file', selectedFile);
 
     try {
-      const res = await axios.post('http://localhost:8000/api/resume/upload', formData, {
+      const res = await axios.post('https://ai-interview-confidence-analyzer.onrender.com/api/resume/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       if (res.data && res.data.summary) {

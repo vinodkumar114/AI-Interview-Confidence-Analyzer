@@ -40,3 +40,4 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=465
 SMTP_USER=vinodkumar.chakali97@gmail.com
 SMTP_PASS=zgtq vdjo wobg kfui
+VITE_API_BASE_URL=https://ai-interview-confidence-analyzer.onrender.com

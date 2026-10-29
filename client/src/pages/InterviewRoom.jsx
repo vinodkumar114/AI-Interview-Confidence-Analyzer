@@ -217,7 +217,7 @@ const InterviewRoom = () => {
     disarmProctoringAndCleanup();
 
     // Call backend endpoint to record malpractice / termination status
-    fetch('http://localhost:8000/api/interview/terminate', {
+    fetch('https://ai-interview-confidence-analyzer.onrender.com/api/interview/terminate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -775,7 +775,7 @@ const InterviewRoom = () => {
 
     let responseData = null;
     try {
-      const res = await fetch('http://localhost:8000/api/interview/respond', {
+      const res = await fetch('https://ai-interview-confidence-analyzer.onrender.com/api/interview/respond', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -863,7 +863,7 @@ const InterviewRoom = () => {
 
     let reportData = null;
     try {
-      const res = await fetch('http://localhost:8000/api/interview/generate-report', {
+      const res = await fetch('https://ai-interview-confidence-analyzer.onrender.com/api/interview/generate-report', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

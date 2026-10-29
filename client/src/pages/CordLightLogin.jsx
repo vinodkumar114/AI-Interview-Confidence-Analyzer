@@ -62,7 +62,7 @@ const CordLightLogin = () => {
     try {
       if (isSignUp) {
         try {
-          await axios.post('http://localhost:8000/api/auth/register', {
+          await axios.post('https://ai-interview-confidence-analyzer.onrender.com/api/auth/register', {
             name: name || 'Candidate',
             email,
             password
@@ -72,7 +72,7 @@ const CordLightLogin = () => {
         }
       } else {
         try {
-          await axios.post('http://localhost:8000/api/auth/login', {
+          await axios.post('https://ai-interview-confidence-analyzer.onrender.com/api/auth/login', {
             name: name || 'Candidate',
             email,
             password
