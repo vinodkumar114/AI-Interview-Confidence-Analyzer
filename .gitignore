@@ -1,0 +1,42 @@
+# Node
+node_modules/
+client/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+server/venv/
+
+# Uploads
+uploads/
+server/uploads/
+
+# Generated reports
+reports/
+server/reports/
+
+# Build
+dist/
+client/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=vinodkumar.chakali97@gmail.com
+SMTP_PASS=zgtq vdjo wobg kfui
