@@ -1,6 +1,6 @@
-Set-Content -Path "server\requirements.txt" -Value @"
 fastapi
 uvicorn[standard]
 pydantic
 python-multipart
-"@
+sqlalchemy
+python-dotenv
